@@ -1,8 +1,8 @@
-import { createContext } from "react";
+import { createContext, useState} from "react";
 
 export const GlobalContext = createContext(null);
 
-export default function GlobalContext({ children }) {
+export default function GlobalState({ children }) {
   const [searchParam, setSearchParam] = useState("");
 
   return (
