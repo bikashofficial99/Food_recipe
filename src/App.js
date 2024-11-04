@@ -10,7 +10,7 @@ function App() {
       <div className="min-h-screen p-6 bg-white text-gray-600 text-lg">
         <Navbar />
         <Routes>
-          <Route path="/home" element={<Home />} />
+          <Route path="/" element={<Home />} />
           <Route path="/favorites" element={<Favorites />} />
           <Route path="recipe-item/:id" element={<Details />} />
         </Routes>
