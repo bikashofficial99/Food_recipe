@@ -14,10 +14,14 @@ useEffect(()=>{
         const data = await response.json();
 
         console.log(data);
+        if (data?.data) {
+            setRecipeDetailsData(data?.data);
+            
+        }
     }
-    getRecipeDetails()
+    getRecipeDetails();
 },[])
 
 
-    return <div>Details</div>
+    return <div className="container mx-auto py-10 grid grid-cols-1 lg:grid-cols-2 gap-10"></div>
 }
